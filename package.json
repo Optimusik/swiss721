@@ -1,0 +1,39 @@
+{
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.6",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/hardhat-upgrades": "^3.2.0",
+    "@types/node": "^20.14.12",
+    "ethers": "^6.13.1",
+    "hardhat": "^2.22.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "@swisstronik/utils": "^1.3.0",
+    "dotenv": "^16.4.5"
+  },
+  "name": "swisstronik-mint-erc721-token",
+  "description": "This project demonstrates a basic Hardhat use case for ERC-721 NFT. It includes a sample contract, a test for that contract, and a Hardhat module that deploys that contract.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "report-gas": "REPORT_GAS=true npx hardhat test",
+    "coverage": "npx hardhat coverage",
+    "deploy": "npx hardhat run scripts/deploy.ts --network swisstronik",
+    "mint": "npx hardhat run scripts/mint.ts --network swisstronik",
+    "transfer": "npx hardhat run scripts/transfer.ts --network swisstronik",
+    "check-supply": "npx hardhat run scripts/check-supply.ts --network swisstronik",
+    "balance-of": "npx hardhat run scripts/balance-of.ts --network swisstronik",
+    "compile": "npx hardhat compile",
+	"check-nft": "npx hardhat run scripts/check-nft.ts --network swisstronik"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
